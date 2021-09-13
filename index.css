@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Raleway", "Roboto", "Lato", sans-serif;
+    font-weight: 400;
+    padding: 3rem;
+    box-sizing: border-box;
+    background-color: #161623;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.bg-shape-circle {
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    z-index: -5;
+    height: 220px;
+    width: 220px;
+    background: rgb(253,29,29);
+    background: linear-gradient(37deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    border-radius: 50%;
+}
+
+.bg-shape-triangle {
+    position: absolute;
+    bottom: 18rem;
+    right: 2rem;
+    height: 175px;
+    width: 200px;
+    z-index: -5;
+    background: rgb(0,255,255);
+    background: linear-gradient(300deg, rgba(0,255,255,1) 0%, rgba(199,0,255,1) 100%);
+    transform: rotate(45deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.mobile-nav-btn {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    color: #fff;
+    font-size: 3rem;
+    align-self: flex-end;
+}
+
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+    transition: all .25s;
+}
+
+.mobile-nav.moveInLeft {
+    left: 0;
+}
+
+.mobile-nav i {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.mobile-nav li,
+.mobile-nav li a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.hero {
+    width: calc(100vw - 6rem);
+    height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero > div {
+    padding: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.hero h1 span {
+    font-size: 5rem;
+}
+
+.hero .contacts {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.hero .contacts i {
+    font-size: 3rem;
+    margin-right: 2rem;
+    color:rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+}
+
+.hero .contacts i:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(255,255,255,0.2);
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-nav-btn,
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+    }
+    .desktop-nav ul {
+        min-width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .desktop-nav li,
+    .desktop-nav li a {
+        color: #fff;
+        list-style: none;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        padding-bottom: .5rem;
+    }
+    .desktop-nav li a:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .hero {
+        height: calc(100vh - 6rem - 30px);
+    }
+    .hero span {
+        font-size: 6rem;
+    }
+    .hero h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bg-shape-circle {
+        width: 400px;
+        height: 400px;
+        top: 15rem;
+        left: 15rem;
+    }
+    .bg-shape-triangle {
+        width: 350px;
+        height: 300px;
+        bottom: 20rem;
+        right: 5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .bg-shape-circle {
+        width: 400px;
+        height: 400px;
+        top: 7.5rem;
+        left: 25rem;
+    }
+    .bg-shape-triangle {
+        width: 300px;
+        height: 250px;
+        bottom: 15rem;
+        right: 25rem;
+    }
+}
