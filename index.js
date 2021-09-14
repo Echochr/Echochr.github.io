@@ -68,4 +68,5 @@ const getHKOWeatherData = async () => {
 getHKOWeatherData()
 
 const date = new Date()
-todayDate.innerHTML = date.toISOString().split('T')[0]
+const HKDate = date.toLocaleString().split(' ')[0].split('/')
+todayDate.innerHTML = `${HKDate[2]}-${HKDate[1]}-${HKDate[0]}`
