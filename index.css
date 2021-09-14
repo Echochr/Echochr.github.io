@@ -264,10 +264,8 @@ h2.section-header {
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: .25rem;
     color: #fff;
-}
-
-.contact-me-form .form-item input::placeholder {
-    color: rgba(255, 255, 255, 0.25);
+    font-family: "Raleway", "Roboto", "Lato", sans-serif;
+    padding: 1rem;
 }
 
 .contact-me-form .form-item textarea {
@@ -278,6 +276,12 @@ h2.section-header {
     background-color: rgba(255, 255, 255, 0.25);
     font-family: "Raleway", "Roboto", "Lato", sans-serif;
     color: #fff;
+    padding: 1rem;
+}
+
+.contact-me-form .form-item input::placeholder,
+.contact-me-form .form-item textarea::placeholder {
+    color: rgba(255, 255, 255, 0.25);
 }
 
 .contact-me-form button {
@@ -286,9 +290,14 @@ h2.section-header {
     border: 0;
     border-radius: 2rem;
     background-color: rgba(255, 255, 255, 0.25);
-    color: #fff;
+    color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     font-size: 2rem;
     cursor: pointer;
+}
+
+.contact-me-form button:hover {
+    transform: translateY(-3px);
 }
 
 .go-top-btn {
