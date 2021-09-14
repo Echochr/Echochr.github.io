@@ -141,8 +141,7 @@ body {
 }
 
 .recent-works {
-    padding-top: 3rem;
-    height: calc(100vh - 3rem);
+    padding: 3rem 0;
 }
 
 h2.section-header {
@@ -195,6 +194,29 @@ h2.section-header {
 
 .recent-works-card .card-text {
     margin-top: 1rem;
+}
+
+.skills-card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.skills-card {
+    padding: 3rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-card img {
+    width: 8rem;
+    height: 8rem;
 }
 
 .go-top-btn {
@@ -261,6 +283,13 @@ h2.section-header {
     h2.section-header {
         font-size: 4rem;
     }
+
+    .skills-card {
+        margin-right: 3rem;
+    }
+    .skills-card:last-child {
+        margin-right: 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -316,5 +345,9 @@ h2.section-header {
         height: 350px;
         bottom: 20rem;
         right: 40rem;
+    }
+
+    .recent-works-card {
+        height: 62rem;
     }
 }
