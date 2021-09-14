@@ -305,6 +305,12 @@ h2.section-header {
     transform: translateY(-3px);
 }
 
+footer {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 .go-top-btn {
     position: fixed;
     bottom: 3rem;
