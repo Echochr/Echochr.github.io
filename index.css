@@ -424,6 +424,10 @@ footer {
         bottom: 20rem;
         right: 5rem;
     }
+
+    .recent-works-card-container a {
+        margin-bottom: 4rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {
