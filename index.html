@@ -17,7 +17,7 @@
         <i class="fas fa-times" id="mobile-nav-close"></i>
         <ul>
             <li class="mobile-nav-item"><a href="#">Home</a></li>
-            <li class="mobile-nav-item"><a href="#">Recent Works</a></li>
+            <li class="mobile-nav-item"><a href="#recent-works">Recent Works</a></li>
             <li class="mobile-nav-item"><a href="#">Skills</a></li>
             <li class="mobile-nav-item"><a href="#">Contact Me</a></li>
         </ul>
@@ -26,18 +26,69 @@
     <nav class="desktop-nav">
         <ul>
             <li class="desktop-nav-item"><a href="#">Home</a></li>
-            <li class="desktop-nav-item"><a href="#">Recent Works</a></li>
+            <li class="desktop-nav-item"><a href="#recent-works">Recent Works</a></li>
             <li class="desktop-nav-item"><a href="#">Skills</a></li>
             <li class="desktop-nav-item"><a href="#">Contact Me</a></li>
         </ul>
     </nav>
-    <section class="hero">
+    <!-- home Section -->
+    <section class="home">
         <div>
             <h1><span>Hello World,</span><br>My name is Chris Ho</h1>
             <div class="contacts">
                 <a href="https://github.com/Echochr" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/chris-hct/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
+        </div>
+    </section>
+    <!-- Recent Works Section -->
+    <section class="recent-works" id="recent-works">
+        <h2 class="section-header">Recent Works</h2>
+        <div class="recent-works-card-container">
+            <a href="https://echochr.github.io/pokedex/" target="_blank">
+                <div class="recent-works-card">
+                    <div class="card-img">
+                        <img src="./src/img/pokedex.png" alt="pokedex">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Pokedex</div>
+                        <div class="card-text">Pokedex showing all Pokemons from Gen 1-8</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="recent-works-card">
+                    <div class="card-img">
+                        <img src="" alt="findyourhat">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Find Your Hat</div>
+                        <div class="card-text">A simple web game to find the hat</div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://todolist-genhk.herokuapp.com/tasks" target="_blank">
+                <div class="recent-works-card">
+                    <div class="card-img">
+                        <img src="./src/img/todolist.png" alt="todolist">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Todolist</div>
+                        <div class="card-text">A Todolist app with CRUD functions deployed on heroku</div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://yelpcamp-052021.herokuapp.com/" target="_blank">
+                <div class="recent-works-card">
+                    <div class="card-img">
+                        <img src="./src/img/yelpcamp.png" alt="yelpcamp">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Yelpcamp</div>
+                        <div class="card-text">A campground review website project guided by Colt Steele's Web Developer Bootcamp on Udemy</div>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
     <script src="./index.js"></script>
