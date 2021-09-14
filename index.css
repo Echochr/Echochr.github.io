@@ -123,7 +123,7 @@ body {
 }
 
 .home h1 span {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .home .contacts {
@@ -141,7 +141,7 @@ body {
 }
 
 .recent-works {
-    padding: 3rem 0;
+    margin: 5rem 0;
 }
 
 h2.section-header {
@@ -172,7 +172,7 @@ h2.section-header {
 
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    border-radius: 15px;
+    border-radius: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -200,6 +200,7 @@ h2.section-header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-bottom: 3rem;
 }
 
 .skills-card {
@@ -217,6 +218,77 @@ h2.section-header {
 .skills-card img {
     width: 8rem;
     height: 8rem;
+}
+
+.contact-me {
+    width: 100%
+}
+
+.contact-me-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 5rem 3rem;
+    border-radius: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me-form form {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.contact-me-form .form-item {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.contact-me-form .form-item-label {
+    margin-bottom: .5rem;
+}
+
+.contact-me-form .form-item input {
+    font-size: 2rem;
+    width: 100%;
+    height: 4rem;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: .25rem;
+    color: #fff;
+}
+
+.contact-me-form .form-item input::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.contact-me-form .form-item textarea {
+    font-size: 2rem;
+    border-radius: .25rem;
+    width: 100%;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-family: "Raleway", "Roboto", "Lato", sans-serif;
+    color: #fff;
+}
+
+.contact-me-form button {
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border: 0;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .go-top-btn {
