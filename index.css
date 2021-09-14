@@ -139,11 +139,6 @@ body {
     cursor: pointer;
 }
 
-.hero .contacts i:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(255,255,255,0.2);
-}
-
 @media screen and (min-width: 768px) {
     .mobile-nav-btn,
     .mobile-nav {
@@ -174,11 +169,14 @@ body {
     .hero {
         height: calc(100vh - 6rem - 30px);
     }
-    .hero span {
-        font-size: 6rem;
+    .hero > div {
+        padding: 5rem;
     }
     .hero h1 {
         font-size: 5rem;
+    }
+    .hero h1 span {
+        font-size: 6rem;
     }
 }
 
@@ -209,5 +207,20 @@ body {
         height: 250px;
         bottom: 15rem;
         right: 25rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .bg-shape-circle {
+        width: 450px;
+        height: 450px;
+        top: 7.5rem;
+        left: calc(30% - 10rem);
+    }
+    .bg-shape-triangle {
+        width: 400px;
+        height: 350px;
+        bottom: 20rem;
+        right: 40rem;
     }
 }
