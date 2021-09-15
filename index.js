@@ -25,6 +25,7 @@ const getHKOWeatherData = async () => {
     const data = await res.json()
     const hkoTemp = data.temperature.data[1].value
     const hkoIcon = data.icon[0]
+    const hkoDate = data.iconUpdateTime.split('T')[0].split('-')
 
     let icon
     const obj = {
@@ -64,8 +65,6 @@ const getHKOWeatherData = async () => {
     
     weatherIcon.innerHTML = `<i class="fas fa-${icon}"></i>`
     temperature.innerHTML = `${hkoTemp}&#8451;`
+    todayDate.innerHTML = `${hkoDate[2]}-${hkoDate[1]}-${hkoDate[0]}`
 }
 getHKOWeatherData()
-
-const date = new Date()
-todayDate.innerHTML = date.toISOString().split('T')[0]
