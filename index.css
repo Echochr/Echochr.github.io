@@ -158,8 +158,14 @@ body {
 .home .contacts i {
     font-size: 3.5rem;
     margin-right: 3rem;
-    color:rgba(255, 255, 255, 0.85);
+    color:rgba(255, 255, 255, 0.8);
     cursor: pointer;
+    transition: all .25s;
+}
+
+.home .contacts i:hover {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.25);
 }
 
 .recent-works {
