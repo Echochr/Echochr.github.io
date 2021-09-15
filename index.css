@@ -308,6 +308,11 @@ h2.section-header {
     padding: 1rem;
 }
 
+.contact-me-form .form-item input:focus,
+.contact-me-form .form-item textarea:focus {
+    outline-color: yellowgreen;
+}
+
 .contact-me-form .form-item input::placeholder,
 .contact-me-form .form-item textarea::placeholder {
     color: rgba(255, 255, 255, 0.25);

@@ -135,7 +135,7 @@
                     <input type="text" name="name" placeholder="Name" id="name" required>
                 </div>
                 <div class="form-item">
-                    <label for="name" class="form-item-label">Email</label>
+                    <label for="email" class="form-item-label">Email</label>
                     <input type="email" name="email" placeholder="Email" id="email" required>
                 </div>
                 <div class="form-item">
@@ -159,17 +159,26 @@
     <script src="./index.js"></script>
     <script type="text/javascript" src="./src/js/vanilla-tilt.js"></script>
     <script type="text/javascript">
-        const tiltCardItems = []
+        const cardListOne = []
+        const cardListTwo = []
         const homeCard = document.querySelector(".home-container")
         const recentWorksCards = document.querySelectorAll(".recent-works-card")
         const skillsCards = document.querySelectorAll(".skills-card")
-        tiltCardItems.push(homeCard)
-        tiltCardItems.push(...recentWorksCards)
-        tiltCardItems.push(...skillsCards)
+        cardListOne.push(homeCard)
+        cardListTwo.push(...recentWorksCards)
+        cardListOne.push(...skillsCards)
 
-        tiltCardItems.map(card => {
+        cardListOne.map(card => {
             VanillaTilt.init(card, {
-            max: 25,
+            max: 20,
+            speed: 400,
+            glare: true,
+            "max-glare": .6
+            });
+        })
+        cardListTwo.map(card => {
+            VanillaTilt.init(card, {
+            max: 10,
             speed: 400,
             glare: true,
             "max-glare": .6
