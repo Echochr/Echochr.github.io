@@ -129,11 +129,11 @@ body {
     align-items: center;
 }
 
-.home > div {
+.home .home-container {
     padding: 2.5rem;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    border-radius: 15px;
+    border-radius: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -230,20 +230,23 @@ h2.section-header {
 }
 
 .skills-card {
-    padding: 3rem;
+    padding: 3.5rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .skills-card img {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
+    transform: translateZ(35px);
 }
 
 .contact-me {
@@ -349,6 +352,16 @@ footer {
     font-size: 3rem;
 }
 
+.home-container .js-tilt-glare {
+    border-radius: 1rem;
+}
+.recent-works-card .js-tilt-glare {
+    border-radius: 1rem;
+}
+.skills-card .js-tilt-glare {
+    border-radius: 50%;
+}
+
 @media screen and (min-width: 768px) {
     .mobile-nav-btn,
     .mobile-nav {
@@ -389,7 +402,7 @@ footer {
     .home {
         height: calc(100vh - 6rem - 30px);
     }
-    .home > div {
+    .home .home-container {
         padding: 5rem;
     }
     .home h1 {

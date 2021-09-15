@@ -39,7 +39,7 @@
     </section>
     <!-- Home Section -->
     <section class="home">
-        <div>
+        <div class="home-container">
             <h1><span>Hello World,</span><br>My name is Chris Ho</h1>
             <div class="contacts">
                 <a href="https://www.linkedin.com/in/chris-hct/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -157,5 +157,24 @@
     <!-- Go Top Button -->
     <div class="go-top-btn"><a href="#home"><i class="fas fa-arrow-up"></i></a></div>
     <script src="./index.js"></script>
+    <script type="text/javascript" src="./src/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        const tiltCardItems = []
+        const homeCard = document.querySelector(".home-container")
+        const recentWorksCards = document.querySelectorAll(".recent-works-card")
+        const skillsCards = document.querySelectorAll(".skills-card")
+        tiltCardItems.push(homeCard)
+        tiltCardItems.push(...recentWorksCards)
+        tiltCardItems.push(...skillsCards)
+
+        tiltCardItems.map(card => {
+            VanillaTilt.init(card, {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": .6
+            });
+        })
+    </script>
 </body>
 </html>
