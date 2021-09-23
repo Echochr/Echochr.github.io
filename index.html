@@ -130,7 +130,7 @@
                 <img src="./src/img/nodejs.png" alt="node.js">
             </div>
             <div class="skills-card">
-                <img src="./src/img/express-circle.png" alt="express.js">
+                <img src="./src/img/express-js.png" alt="express.js">
             </div>
             <div class="skills-card">
                 <img src="./src/img/mongodb.png" alt="mongodb">
@@ -167,35 +167,9 @@
         <p>&copy; Created by Chris Ho (2021)</p>
     </footer>
     <!-- Go Top Button -->
-    <div class="go-top-btn"><a href="#home"><i class="fas fa-arrow-up"></i></a></div>
+    <a href="#home"><div class="go-top-btn"><i class="fas fa-arrow-up"></i></div></a>
     <script src="./index.js"></script>
     <script type="text/javascript" src="./src/js/vanilla-tilt.js"></script>
-    <script type="text/javascript">
-        const cardListOne = []
-        const cardListTwo = []
-        const homeCard = document.querySelector(".home-container")
-        const recentWorksCards = document.querySelectorAll(".recent-works-card")
-        const skillsCards = document.querySelectorAll(".skills-card")
-        cardListOne.push(homeCard)
-        cardListTwo.push(...recentWorksCards)
-        cardListOne.push(...skillsCards)
-
-        cardListOne.map(card => {
-            VanillaTilt.init(card, {
-            max: 20,
-            speed: 400,
-            glare: true,
-            "max-glare": .6
-            });
-        })
-        cardListTwo.map(card => {
-            VanillaTilt.init(card, {
-            max: 5,
-            speed: 400,
-            glare: true,
-            "max-glare": .2
-            });
-        })
-    </script>
+    <script type="text/javascript" src="src/js/tiltEffect.js"></script>
 </body>
 </html>
