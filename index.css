@@ -183,19 +183,12 @@ h2.section-header {
     flex-flow: column wrap;
 }
 
-.recent-works-card-container a {
-    text-decoration: none;
-    margin-bottom: 2.5rem;
-}
-.recent-works-card-container a:last-child {
-    margin-bottom: 0;
-}
-
 .recent-works-card {
     color: #fff;
     font-size: 1.5rem;
     border-radius: .5rem;
     padding: 2rem;
+    margin-bottom: 2.5rem;
     cursor: pointer;
 
     background-color: rgba(255, 255, 255, 0.1);
@@ -204,6 +197,15 @@ h2.section-header {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.recent-works-card:last-child {
+    margin-bottom: 0;
+}
+
+.recent-works-card a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .recent-works-card .card-img img {
@@ -453,7 +455,7 @@ footer {
         right: 5rem;
     }
 
-    .recent-works-card-container a {
+    .recent-works-card {
         margin-bottom: 4rem;
     }
 }
@@ -476,7 +478,7 @@ footer {
         flex-flow: row wrap;
         justify-content: space-evenly;
     }
-    .recent-works-card-container a {
+    .recent-works-card {
         width: 45%;
     }
     .recent-works-card {
