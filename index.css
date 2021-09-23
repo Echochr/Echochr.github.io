@@ -22,6 +22,10 @@ body {
     flex-flow: column wrap;
 }
 
+::selection {
+    background: yellowgreen;
+}
+
 .bg-shape-circle {
     position: fixed;
     top: 10rem;
