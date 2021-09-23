@@ -189,7 +189,6 @@ h2.section-header {
     border-radius: .5rem;
     padding: 2rem;
     margin-bottom: 2.5rem;
-    cursor: pointer;
 
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
@@ -213,6 +212,13 @@ h2.section-header {
     height: 100%;
     border-radius: .5rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.recent-works-card .card-body > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .recent-works-card .card-title {
@@ -222,8 +228,22 @@ h2.section-header {
     text-transform: uppercase;
 }
 
+.recent-works-card .source-code-tag {
+    align-self: flex-end;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    margin-top: .5rem;
+    transition: all .2s;
+}
+
+.recent-works-card .source-code-tag:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
 .recent-works-card .card-text {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .skills {
